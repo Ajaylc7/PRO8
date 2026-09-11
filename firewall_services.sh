@@ -8,22 +8,25 @@
 # ==========================================
 
 # Check current firewall services
-firewall-cmd --list-services
+sudo firewall-cmd --list-services
 
 # Allow HTTP service
-firewall-cmd --add-service=http
+sudo firewall-cmd --add-service=http
 
 # Allow HTTPS service
-firewall-cmd --add-service=https
+sudo firewall-cmd --add-service=https
 
 # Display enabled services
-firewall-cmd --list-services
+sudo firewall-cmd --list-services
 
 # Remove HTTP service
-firewall-cmd --remove-service=http
+sudo firewall-cmd --remove-service=http
 
 # Allow SSH permanently
-firewall-cmd --permanent --add-service=ssh
+sudo firewall-cmd --permanent --add-service=ssh
 
 # Reload firewall configuration
-firewall-cmd --reload
+sudo firewall-cmd --reload
+
+exit 0
+
